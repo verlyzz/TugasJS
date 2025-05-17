@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+    <script>
+        // const output = document.getElementById("output");
+
+        // const button = document.createElement("button");
+        // button.innerText = "save";
+
+        // output.append(button)
+    </script>
+
+    
+
+    <h1 id="daftar"><b>isi y</b></h1>
+    
+    <div>
+        <label for="bunny">nama:</label>
+        <br>
+        <input id="bunny" name="bunny" type="text">
+    </div>
+
+    <button onclick="pop()">save</button>
+
+    <div id="output"></div>
+
+
+
+    <script>
+
+    const nama = ["verla", "virli", "vurlu", "vorlo"];
+    const output = document.getElementById("output");
+
+    function displayNames() {
+        output.innerHTML = ""; 
+
+        nama.forEach(function (anak) {
+        const paragraph = document.createElement("p");
+        paragraph.style.background = "pink";
+        paragraph.style.color = "green";
+        paragraph.innerText = anak;
+        output.appendChild(paragraph);
+        });
+        }
+
+    
+    function pop() {
+        const input = document.getElementById("bunny");
+        const name = input.value.trim();
+
+        if (name !== "") {
+        nama.push(name);     
+        input.value = "";    
+        displayNames();     
+        }}
+
+    displayNames();
+
+    </script>
+
+
+
+    <script>
+        // const nama = ["verla", "virli", "vurlu", "vorlo"];
+        // nama.forEach(function(anak){
+        // const paragraph = document.createElement("p")
+        // paragraph.style.background = "pink"
+        // paragraph.style.color = "green"
+
+        // paragraph.innerText = anak;
+
+        // output.append(paragraph);
+
+        // });
+    </script>
+</body>
+</html>
