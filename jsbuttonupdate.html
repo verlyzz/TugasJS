@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //    function toCelsius(fahrenheit) {
+    //      return (5/9) * (fahrenheit-32);
+    //         }
+
+    // let value = toCelsius(77);
+    // let text = "The temperature is " + toCelsius(77) + " Celsius";
+    </script>
+    
+
+
+    <h1 id="kebab">judul</h1>
+    <button onclick="fungsi()">update judul</button>
+
+    <script>
+        function fungsi() {
+            document.getElementById("kebab").innerText = "judul sudah di update";
+        }
+    </script>
+   
+   
+
+    <h1>kalo mau update judul, pencet tombolnya.</h1>
+    <button onclick="burger()">update</button>
+   
+    <script>
+    function burger() {
+    alert("Ciyus?\nYakin mau update?");
+    }
+    </script>
+
+    
+
+    <h1 id="daftar"> <i>daftar gk hm</i> </h1>
+    <div>
+        <label for="">nama:</label>
+        <input id="miayam" name="miayam" type="text">
+    </div>
+
+    <button onclick="lay()">save hm</button>
+
+    <script>
+        function lay() {
+        let judul = document.getElementById("daftar");
+        let input = document.getElementById("miayam");
+
+        alert( "hello " + input.value + " hmmmm");
+        }
+    </script>
+
+
+
+
+    <script>
+    // document.getElementById("judul").style.color = "pink";
+    // console.log(document.getElementByClassName("hm")[0, 1, 2].style.background = "purple");
+    </script>
+</body>
+</html>
